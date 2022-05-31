@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: hsl(185, 75%, 39%);
+  background-image: url(https://digitshack.com/codepen/mentor4/bg-pattern-top.svg),
+    url(https://digitshack.com/codepen/mentor4/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 40vh, left 48vw top 50vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.profile-card {
+  height: 375px;
+  width: 350px;
+  background-color: white;
+  border-radius: 5%;
+  overflow: hidden;
+}
+
+.profile-content img {
+  border: 5px solid #fff;
+  border-radius: 50%;
+  margin-top: -55px;
+  margin-bottom: 15px;
+}
+
+.name {
+  font-weight: 700;
+  color: var(--very-dark-desaturated-blue);
+  padding-bottom: 10px;
+}
+
+.profile-content h2 {
+  font-weight: 700;
+  color: var(--very-dark-desaturated-blue);
+  padding-bottom: 5px;
+}
+
+.profile-content span {
+  color: var(--dark-grayish-blue);
+  font-weight: 400;
+}
+
+.profile-content p {
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--dark-gray);
+  padding-bottom: 20px;
+}
+
+hr {
+  color: var(--dark-gray);
+  opacity: 0.2;
+}
+
+.profile-stats {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.profile-stat p {
+  font-size: 12px;
+}
